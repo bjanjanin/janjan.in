@@ -1,0 +1,71 @@
+* { margin: 0; padding: 0 }
+
+body { background: #8de8b1; font: 34px/1.2 "futura-pt", sans-serif; font-weight: 700; color: #fff; padding: 60px 0 }
+
+header { margin: 0 auto; width: 100% }
+	header img { margin: 50px auto; display: block }
+h1 { text-indent: -99999px; height: 0; margin: 0 }
+p { text-align: center }
+
+h2, footer { font-size: 14px; margin: 0 0 80px 0; text-align: center; letter-spacing: 3px; text-transform: uppercase; color: #222; font-weight: 700; }
+
+.logo { max-width: 350px; }
+
+#about, #contact { padding: 80px 0; background: #e55; font-weight: 700; }
+	#contact p, #about p { margin: 0 auto; width: 50% }
+
+footer { padding: 100px 0 }
+
+#work { background: #fff; padding: 80px 0 150px 0 }
+	#work .group { width: 70%; margin: 0 auto }
+	#work h2 { text-transform: uppercase; color: #333; font-size: 54px; margin-bottom: 40px; letter-spacing: 0 }
+	#work h3 { color: #f25454 }
+	#work p { font: 18px Georgia; color: #333; text-align: left; line-height: 1.6 }
+	
+/* grid */
+.section { clear: both; padding: 0; margin: 0; background: transparent }
+.col { display: block; float: left; margin: 1% 0 1% 1.6%; background: transparent }
+.col:first-child { margin-left: 0 }
+.col:last-child { float: right }
+.group:before, .group:after { content: ""; display: table }
+.group:after { clear: both }
+
+/* 2col grid */
+.span1of2 {	width: 45% }
+
+/* 3col grid */
+.span3of3 {	width: 100% }
+.span2of3 {	width: 66.1% } 
+.span1of3 { width: 32.2% }
+
+/* 4 col grid */
+.span4of4 { width: 100% }
+.span3of4 { width: 74.6% }
+.span2of4 { width: 49.2% }
+.span1of4 { width: 23.8% }
+
+/* responsiveness */
+@media only screen and (max-width: 1024px) {
+	#work .group { width: 85% }
+	#contact p, #about p { width: 90% }
+}
+
+@media only screen and (max-width: 800px) {
+	.span1of2 { width: 100% }
+	#contact p, #about p { width: 90% }
+}
+
+@media only screen and (max-width: 480px) {
+	body { font-size: 20px; padding: 10px 0 }
+	h2 { font-size: 12px }
+	.span1of2 { width: 100% }
+	header img { width: 200px; margin: 20px auto }
+	h2 { margin: 0 0 40px 0 }
+	#about, #contact { padding: 40px 0 }
+	#contact p, #about p { width: 90% }
+	#work { padding: 20px }
+	#work .group { width: 100% }
+		#work h2 { font-size: 24px; text-align: left; margin-bottom: 20px }
+	.col { margin: 0 0 20px 0 }
+	footer { padding: 20px 0 }
+}
